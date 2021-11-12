@@ -1,0 +1,14 @@
+C:\Users\lanal\source\repos\fac05111\fac05111\bin\Debug\fac0511.exe.config
+C:\Users\lanal\source\repos\fac05111\fac05111\bin\Debug\fac0511.exe
+C:\Users\lanal\source\repos\fac05111\fac05111\bin\Debug\fac0511.pdb
+C:\Users\lanal\source\repos\fac05111\fac05111\obj\Debug\MainWindow.g.cs
+C:\Users\lanal\source\repos\fac05111\fac05111\obj\Debug\App.g.cs
+C:\Users\lanal\source\repos\fac05111\fac05111\obj\Debug\fac0511_MarkupCompile.cache
+C:\Users\lanal\source\repos\fac05111\fac05111\obj\Debug\fac0511_MarkupCompile.lref
+C:\Users\lanal\source\repos\fac05111\fac05111\obj\Debug\MainWindow.baml
+C:\Users\lanal\source\repos\fac05111\fac05111\obj\Debug\fac0511.g.resources
+C:\Users\lanal\source\repos\fac05111\fac05111\obj\Debug\fac0511.Properties.Resources.resources
+C:\Users\lanal\source\repos\fac05111\fac05111\obj\Debug\fac0511.csproj.GenerateResource.cache
+C:\Users\lanal\source\repos\fac05111\fac05111\obj\Debug\fac0511.csproj.CoreCompileInputs.cache
+C:\Users\lanal\source\repos\fac05111\fac05111\obj\Debug\fac0511.exe
+C:\Users\lanal\source\repos\fac05111\fac05111\obj\Debug\fac0511.pdb

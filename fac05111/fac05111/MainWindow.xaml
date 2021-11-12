@@ -1,0 +1,63 @@
+﻿<Window x:Class="fac05111.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:fac05111"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+
+    <TabControl>
+
+        <TabItem Header="WebClient">
+            <Grid>
+                <TextBox x:Name="txb" TextWrapping="Wrap" Margin="0,0,0,65"/>
+                <Button x:Name="Button" Content="Загрузить страницу" Margin="331,339,326,10" Click="Button_Click"/>
+            </Grid>
+        </TabItem>
+        <TabItem Header="Работа с сетью">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <StackPanel Orientation="Horizontal" Margin="8">
+                    <TextBlock VerticalAlignment="Center">URL-адрес</TextBlock>
+                    <TextBox x:Name="txb_url" Margin="14,0" Width="250" VerticalContentAlignment="Center" Text="http://professorweb.ru/"/>
+                    <Button Click="request_Click" Padding="5" Content="Получить информацию"/>
+                </StackPanel>
+                <TextBlock Margin="8" Text="Исходный код страницы: " Grid.Row="1"/>
+                <TextBox x:Name="txb_sourceCode" Grid.Row="2" Padding="5" Margin="8" TextWrapping="Wrap" VerticalScrollBarVisibility="Visible"/>
+                <GridSplitter Grid.Row="3" HorizontalAlignment="Stretch" Height="3" Margin="8,0" Background="#aaa"/>
+                <TextBox x:Name="txb_serverInfo" Grid.Row="4" Padding="5" Margin="8" TextWrapping="Wrap" VerticalScrollBarVisibility="Visible"/>
+            </Grid>
+        </TabItem>
+        <TabItem Header="FileWebRequest">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="auto"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="Открыть файл" VerticalAlignment="Center" Margin="8"/>
+                <TextBox x:Name="txb_fileuri" Margin="14,8" VerticalContentAlignment="Center" Grid.Column="1"/>
+                <Button Content="Открыть" Click="openFile_Click" Padding="5" MinWidth="120" Grid.Column="2" Margin="0,8,8,8"/>
+                <TextBlock Text="Записать в файл" VerticalAlignment="Center" Grid.Row="1" Margin="8"/>
+                <TextBox x:Name="txb_writefile" Margin="14,8" VerticalContentAlignment="Center" Grid.Row="1" Grid.Column="1"/>
+                <Button Content="Записать" Click="writeFile_Click" Padding="5" MinWidth="120" Grid.Row="1" Grid.Column="2" Margin="0,8,8,8"/>
+                <TextBox x:Name="txb_fileContent" TextWrapping="Wrap" Margin="8" Padding="5" Grid.ColumnSpan="3" Grid.Row="2"
+           VerticalScrollBarVisibility="Visible"/>
+            </Grid>
+        </TabItem>
+
+    </TabControl>
+   
+</Window>
